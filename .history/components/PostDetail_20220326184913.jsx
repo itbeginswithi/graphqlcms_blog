@@ -1,5 +1,4 @@
 import moment from 'moment'
-import Head from 'next/head'
 import React from 'react'
 
 const PostDetail = ({ post }) => {
@@ -63,7 +62,7 @@ const PostDetail = ({ post }) => {
   return (
     <div className="mb-8 rounded-lg bg-white pb-12 shadow-lg lg:p-8">
       <Head>
-        <title>{post.title}</title>
+        <title>{slug.slice(0, 1).toUpperCase() + slug.slice(1)}</title>
       </Head>
       <div className="relative mb-6 overflow-hidden shadow-md">
         <img

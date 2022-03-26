@@ -63,7 +63,7 @@ const PostDetail = ({ post }) => {
   return (
     <div className="mb-8 rounded-lg bg-white pb-12 shadow-lg lg:p-8">
       <Head>
-        <title>{post.title}</title>
+        <title>{post.title.slice(0, 1).toUpperCase() + post.title.slice(1)}</title>
       </Head>
       <div className="relative mb-6 overflow-hidden shadow-md">
         <img
